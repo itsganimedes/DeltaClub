@@ -11,8 +11,7 @@
 
 @font-face {
     font-family: 'Pirulen';
-    src: url('fonts/Pirulen Rg.otf') format('opentype'),
-        url('fonts/Pirulen Rg.otf') format('truetype');
+    src: url('../fonts/Pirulen.otf') format('opentype');
     font-weight: normal;
     font-style: normal;
 }
