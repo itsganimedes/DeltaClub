@@ -1,0 +1,130 @@
+.disciplinas-section {
+    width: 100%;
+    max-width: 1200px;
+    margin: 4rem auto;
+    padding: 0 1.5rem;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+.disciplinas-section h2 {
+    font-family: 'Pirules', sans-serif;
+    color: #ffffff;
+    font-size: 2rem;
+    margin-bottom: 2.5rem;
+    letter-spacing: 1px;
+    text-shadow: 0 0 10px var(--neon);
+}
+
+.disciplinas-section h2 strong {
+    color: var(--neon);
+    text-shadow: 0 0 12px var(--neon), 0 0 25px var(--neon);
+}
+
+/* Grilla adaptable */
+.disciplinas-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(210px, 1fr));
+    gap: 1.5rem;
+}
+
+/* Tarjeta de disciplina */
+.disciplina-card {
+    background: linear-gradient(135deg, #121218, #1a1a24);
+    border: 1px solid rgba(0, 243, 255, 0.15);
+    border-radius: 14px;
+    padding: 2rem 1.2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.8rem;
+    position: relative;
+    overflow: hidden;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.5);
+}
+
+.disciplina-card i {
+    font-size: 2.2rem;
+    color: var(--neon);
+    margin-bottom: 0.2rem;
+    filter: drop-shadow(0 0 8px var(--neon));
+}
+
+.disciplina-card h3 {
+    font-family: 'Pirules', sans-serif;
+    font-size: 1.2rem;
+    color: #ffffff;
+    margin: 0;
+    letter-spacing: 0.5px;
+}
+
+/* Estilo base para los tags o insignias de rasgos */
+.disciplina-card .tag {
+    font-size: 0.75rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    padding: 0.3rem 0.8rem;
+    border-radius: 20px;
+    letter-spacing: 0.5px;
+    margin: 0.2rem 0;
+    border: 1px solid transparent;
+}
+
+.disciplina-card p {
+    font-size: 0.85rem;
+    color: #a0a0b0;
+    margin: 0;
+    line-height: 1.4;
+}
+
+/* Efecto Hover copado */
+.disciplina-card:hover {
+    transform: translateY(-6px);
+    border-color: var(--neon);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.7),
+                0 0 15px var(--neon),
+                inset 0 0 10px rgba(0, 243, 255, 0.1);
+}
+
+/* --- COLORES PERSONALIZADOS PARA LOS TAGS --- */
+
+/* 1. Alto Rendimiento (Rojo Fuego) */
+.tag.fuego {
+    background: rgba(255, 0, 85, 0.12);
+    color: #ff0055;
+    border-color: rgba(255, 0, 85, 0.4);
+    box-shadow: 0 0 10px rgba(255, 0, 85, 0.3);
+}
+
+/* 2. Tranquilo (Verde Neón Suave) */
+.tag.tranquilo {
+    background: rgba(0, 255, 136, 0.12);
+    color: #00ff88;
+    border-color: rgba(0, 255, 136, 0.4);
+    box-shadow: 0 0 10px rgba(0, 255, 136, 0.3);
+}
+
+/* 3. Versátil (Cian clásico) */
+.tag.versatil {
+    background: rgba(0, 243, 255, 0.12);
+    color: #00f3ff;
+    border-color: rgba(0, 243, 255, 0.4);
+    box-shadow: 0 0 10px rgba(0, 243, 255, 0.3);
+}
+
+/* 4. Potencia Pura (Morado / Fucsia Eléctrico) */
+.tag.potencia {
+    background: rgba(183, 0, 255, 0.12);
+    color: #b700ff;
+    border-color: rgba(183, 0, 255, 0.4);
+    box-shadow: 0 0 10px rgba(183, 0, 255, 0.3);
+}
+
+/* 5. Quema Total (Naranja Neón) */
+.tag.quema {
+    background: rgba(255, 136, 0, 0.12);
+    color: #ff8800;
+    border-color: rgba(255, 136, 0, 0.4);
+    box-shadow: 0 0 10px rgba(255, 136, 0, 0.3);
+}

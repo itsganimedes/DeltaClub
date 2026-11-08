@@ -1,0 +1,114 @@
+.cards {
+    display: flex;
+    flex: 1;
+    align-items: center;
+    justify-content: center;
+    margin: 2rem 0;
+    gap: 2rem;
+}
+
+.card {
+    width: 260px;
+    height: 380px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5rem;
+    
+
+    background: linear-gradient(135deg, #121218, #1a1a24);
+    
+
+    border: 1px solid rgba(0, 243, 255, 0.2);
+    border-radius: 16px;
+    
+
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.6), 
+                0 0 15px rgba(0, 243, 255, 0.1);
+                
+    color: #ffffff;
+    padding: 2.5rem 1.5rem;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+
+.card:hover {
+    transform: translateY(-8px);
+    border-color: var(--neon);
+    box-shadow: 0 12px 35px rgba(0, 0, 0, 0.8), 
+                0 0 25px var(--neon),
+                inset 0 0 15px rgba(0, 243, 255, 0.15);
+}
+
+
+.card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 3px;
+    background: linear-gradient(90deg, transparent, var(--neon), transparent);
+    opacity: 0.7;
+}
+
+.card img {
+    width: 7.5rem;
+    height: 7.5rem;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid var(--neon);;
+    box-shadow: 0 0 15px rgba(0, 243, 255, 0.4);
+    margin-bottom: 0.5rem;
+    transition: transform 0.3s ease;
+}
+
+.card:hover img {
+    transform: scale(1.05);
+}
+
+.card b {
+    font-family: 'Pirulen', sans-serif;
+    font-size: 1.1rem;
+    display: block;
+    margin: 0.5rem 0 1rem 0;
+    letter-spacing: 1px;
+    text-shadow: 0 0 10px var(--neon);
+}
+
+
+.card .stats {
+    display: flex;
+    flex-direction: column;
+    gap: 0.6rem;
+    width: 100%;
+    margin-top: auto;
+}
+
+.card .desc {
+    font-size: 0.85rem;
+    color: #a0a0b0;
+    background: rgba(255, 255, 255, 0.03);
+    padding: 0.5rem 0.8rem 0.5rem 2rem;
+    border-radius: 8px;
+    border: 1px solid rgba(255, 255, 255, 0.05);
+    margin: 0;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    position: relative;
+}
+
+.card .desc i{
+    position: absolute;
+    left: 5px;
+}
+
+.card .desc i {
+    color: var(--neon);
+}

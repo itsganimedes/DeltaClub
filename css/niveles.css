@@ -1,0 +1,86 @@
+.niveles-section {
+    width: 100%;
+    max-width: 1200px;
+    margin: 3rem auto;
+    padding: 0 1.5rem;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+.niveles-section h2 {
+    color: #ffffff;
+    font-size: 1.5rem;
+    margin-bottom: 2rem;
+    letter-spacing: 1px;
+    text-shadow: 0 0 10px var(--neon);
+}
+
+.niveles-section h2 strong {
+    color: var(--neon);
+    text-shadow: 0 0 12px var(--neon), 0 0 25px var(--neon);
+}
+
+/* Grilla adaptable para las tarjetas de niveles */
+.niveles-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1.5rem;
+}
+
+/* Tarjeta individual de nivel */
+.nivel-card {
+    background: linear-gradient(135deg, #121218, #1a1a24);
+    border: 1px solid rgba(0, 243, 255, 0.15);
+    border-radius: 14px;
+    padding: 2rem 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.6rem;
+    position: relative;
+    overflow: hidden;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.5);
+}
+
+/* Íconos con toque neón */
+.nivel-card i {
+    font-size: 2.2rem;
+    color: var(--neon);
+    margin-bottom: 0.3rem;
+    filter: drop-shadow(0 0 8px var(--neon));
+}
+
+.nivel-card h3 {
+    font-family: 'Pirules', sans-serif;
+    font-size: 1.2rem;
+    color: #ffffff;
+    margin: 0;
+    letter-spacing: 0.5px;
+}
+
+.nivel-card p {
+    font-size: 0.85rem;
+    color: #a0a0b0;
+    margin: 0;
+}
+
+/* Efecto Hover copado */
+.nivel-card:hover {
+    transform: translateY(-6px);
+    border-color: var(--neon);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.7),
+                0 0 15px var(--neon),
+                inset 0 0 10px rgba(0, 243, 255, 0.1);
+}
+
+/* Toque especial para el nivel "GymRat" (resalta un poco más) */
+.nivel-card.gymrat {
+    background: linear-gradient(135deg, #151520, #1d1b2e);
+    border-color: rgba(0, 243, 255, 0.4);
+}
+
+.nivel-card.gymrat i {
+    color: #ff0055; /* Un toque fucsia/magenta neón para el rango máximo si quieres, o déjalo en --neon */
+    filter: drop-shadow(0 0 10px rgba(255, 0, 85, 0.7));
+}

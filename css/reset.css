@@ -1,0 +1,52 @@
+:root{
+    --neon: rgba(0, 243, 255, 0.6);
+    --oscuro: #052B32;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: 'Pirulen';
+    src: url('fonts/Pirulen Rg.otf') format('opentype'),
+        url('fonts/Pirulen Rg.otf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: #0f0f14;
+    font-family: 'Inter', sans-serif;
+}
+
+strong {
+    color: var(--neon);
+    text-shadow: 0 0 8px var(--neon), 
+                0 0 20px rgba(0, 243, 255, 0.2);
+}
+
+h2{
+    font-family: 'Pirulen', sans-serif;
+    text-align: left;
+    color: #ffff;
+    margin: 2rem 0;
+}
+
+.lit_title {
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    text-align: left;
+    color: #727171;
+    margin: -1.5rem 0 2rem 0;
+    font-size: 0.8rem;
+}
+
+.centered{
+    text-align: center;
+}
