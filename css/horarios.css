@@ -1,0 +1,140 @@
+.horarios-section {
+    width: 100%;
+    padding: 1rem 0.5rem;
+    box-sizing: border-box;
+}
+
+/* Scroll horizontal suave en celulares para que la tabla no se rompa */
+.table-responsive {
+    width: 100%;
+    overflow-x: auto;
+    border-radius: 12px;
+    border: 1px solid rgba(0, 243, 255, 0.2);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.6);
+}
+
+/* Estilo tabla estilo Excel Cyberpunk */
+.horarios-table {
+    width: 100%;
+    border-collapse: collapse;
+    min-width: 650px; /* Garantiza legibilidad en pantallas pequeñas */
+    background: #121218;
+    text-align: center;
+    font-family: sans-serif;
+}
+
+/* Encabezados de días de la semana */
+.horarios-table thead th {
+    font-family: 'Pirulen', 'Pirules', sans-serif;
+    background: linear-gradient(180deg, #1a1a24, #121218);
+    color: #ffffff;
+    padding: 1rem 0.8rem;
+    font-size: 0.95rem;
+    letter-spacing: 1px;
+    border-bottom: 2px solid var(--neon, #00f3ff);
+    text-shadow: 0 0 8px rgba(0, 243, 255, 0.4);
+}
+
+.horarios-table thead th i {
+    color: var(--neon, #00f3ff);
+    margin-right: 0.3rem;
+}
+
+/* Celda de la columna de Horas */
+.horarios-table td.time-col {
+    font-family: 'Pirulen', 'Pirules', sans-serif;
+    font-size: 0.8rem;
+    color: var(--neon, #00f3ff);
+    background: rgba(0, 243, 255, 0.03);
+    font-weight: bold;
+    letter-spacing: 0.5px;
+    border-right: 1px solid rgba(0, 243, 255, 0.15);
+    white-space: nowrap;
+    padding: 0.8rem;
+}
+
+/* Filas generales */
+.horarios-table tbody tr {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+    transition: background 0.2s ease;
+}
+
+.horarios-table tbody tr:hover {
+    background: rgba(0, 243, 255, 0.04);
+}
+
+.horarios-table td {
+    padding: 0.7rem 0.4rem;
+    vertical-align: middle;
+}
+
+/* Fila de Receso/Descanso */
+.horarios-table .break-row td {
+    background: rgba(5, 43, 50, 0.6);
+    color: #a0a0b0;
+    font-size: 0.85rem;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    padding: 0.6rem;
+    border-top: 1px solid rgba(0, 243, 255, 0.2);
+    border-bottom: 1px solid rgba(0, 243, 255, 0.2);
+}
+
+.horarios-table .break-row td i {
+    color: var(--neon, #00f3ff);
+    margin-right: 0.4rem;
+}
+
+/* Insignias de disciplinas dentro de las celdas */
+.horarios-table .badge {
+    display: inline-block;
+    padding: 0.35rem 0.7rem;
+    border-radius: 6px;
+    font-size: 0.8rem;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    width: 85%;
+    box-sizing: border-box;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.horarios-table .badge:hover {
+    transform: scale(1.05);
+}
+
+/* Colores Neón por Disciplina */
+.badge.funcional {
+    background: rgba(0, 243, 255, 0.12);
+    color: #00f3ff;
+    border: 1px solid rgba(0, 243, 255, 0.4);
+}
+
+.badge.fuerza {
+    background: rgba(183, 0, 255, 0.12);
+    color: #b700ff;
+    border: 1px solid rgba(183, 0, 255, 0.4);
+}
+
+.badge.atletico {
+    background: rgba(255, 0, 85, 0.12);
+    color: #ff0055;
+    border: 1px solid rgba(255, 0, 85, 0.4);
+}
+
+.badge.hiit {
+    background: rgba(255, 136, 0, 0.12);
+    color: #ff8800;
+    border: 1px solid rgba(255, 136, 0, 0.4);
+}
+
+.badge.movilidad {
+    background: rgba(0, 255, 136, 0.12);
+    color: #00ff88;
+    border: 1px solid rgba(0, 255, 136, 0.4);
+}
+
+.badge.other{
+    background: rgba(0, 81, 255, 0.12);
+    color: #c9c7f3;
+    border: 1px solid rgba(47, 0, 255, 0.4);
+}

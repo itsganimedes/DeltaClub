@@ -16,7 +16,7 @@
     <link rel="stylesheet" href="css/header.css">
     <link rel="stylesheet" href="css/niveles.css">
     <link rel="stylesheet" href="css/disciplinas.css">
-    <!-- Tu archivo CSS para los colapsables -->
+    <link rel="stylesheet" href="css/horarios.css">
     <link rel="stylesheet" href="css/collapsible.css">
 </head>
 <body>
@@ -28,75 +28,110 @@
 
     <main class="main-container">
 
-        <!-- BLOQUE 1: NIVELES -->
+        <!-- BLOQUE 1: HORARIOS -->
         <div class="collapsible-block">
             <button class="toggle-btn" type="button">
                 <div class="title-wrapper">
-                    <h2>Niveles <strong>DELTA</strong></h2>
-                    <p class="lit_title">¿Hasta dónde estás dispuesto a llegar?</p>
+                    <h2>Horarios <strong>DELTA</strong></h2>
+                    <p class="lit_title">Planificá tus entrenamientos de la semana</p>
                 </div>
                 <i class="fa-solid fa-chevron-down arrow-icon"></i>
             </button>
             <div class="collapsible-content">
-                <section class="niveles-section">
-                    <div class="niveles-grid">
-                        <div class="nivel-card">
-                            <i class="fa-solid fa-seedling"></i>
-                            <h3>Principiante</h3>
-                            <p>Menos de 2 meses</p>
-                        </div>
-                        <div class="nivel-card">
-                            <i class="fa-solid fa-dumbbell"></i>
-                            <h3>Amateur</h3>
-                            <p>Entre 2 y 6 meses</p>
-                        </div>
-                        <div class="nivel-card">
-                            <i class="fa-solid fa-fire"></i>
-                            <h3>Intermedio</h3>
-                            <p>Entre 6 y 9 meses</p>
-                        </div>
-                        <div class="nivel-card">
-                            <i class="fa-solid fa-bolt"></i>
-                            <h3>Avanzado</h3>
-                            <p>Entre 9 y 12 meses</p>
-                        </div>
-                        <div class="nivel-card gymrat">
-                            <i class="fa-solid fa-skull"></i>
-                            <h3>GymRat</h3>
-                            <p>Más de 12 meses</p>
-                        </div>
+                <section class="horarios-section">
+                    <div class="table-responsive">
+                        <table class="horarios-table">
+                            <thead>
+                                <tr>
+                                    <th><i class="fa-regular fa-clock"></i> Hora</th>
+                                    <th>Lunes</th>
+                                    <th>Martes</th>
+                                    <th>Miércoles</th>
+                                    <th>Jueves</th>
+                                    <th>Viernes</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <!-- TURNO MAÑANA -->
+                                <tr>
+                                    <td class="time-col">09:00 - 10:00</td>
+                                    <td><span class="badge funcional">Funcional</span></td>
+                                    <td><span class="badge atletico">Atlético</span></td>
+                                    <td><span class="badge funcional">Funcional</span></td>
+                                    <td><span class="badge atletico">Atlético</span></td>
+                                    <td><span class="badge funcional">Funcional</span></td>
+                                </tr>
+                                <tr>
+                                    <td class="time-col">10:00 - 11:00</td>
+                                    <td><span class="badge funcional">Funcional</span></td>
+                                    <td><span class="badge fuerza">Fuerza</span></td>
+                                    <td><span class="badge funcional">Funcional</span></td>
+                                    <td><span class="badge fuerza">Fuerza</span></td>
+                                    <td><span class="badge funcional">Funcional</span></td>
+                                </tr>
+                                <tr>
+                                    <td class="time-col">11:00 - 12:00</td>
+                                    <td><span class="badge fuerza">Fuerza</span></td>
+                                    <td><span class="badge funcional">Funcional</span></td>
+                                    <td><span class="badge fuerza">Fuerza</span></td>
+                                    <td><span class="badge funcional">Funcional</span></td>
+                                    <td><span class="badge fuerza">Fuerza</span></td>
+                                </tr>
+                                <tr>
+                                    <td class="time-col">12:00 - 13:00</td>
+                                    <td><span class="badge atletico">Atlético</span></td>
+                                    <td><span class="badge hiit">Alta Intensidad</span></td>
+                                    <td><span class="badge atletico">Atlético</span></td>
+                                    <td><span class="badge hiit">Alta Intensidad</span></td>
+                                    <td><span class="badge atletico">Atlético</span></td>
+                                </tr>
+
+                                <!-- SEPARADOR MEDIODÍA -->
+                                <tr class="break-row">
+                                    <td colspan="6"><i class="fa-solid fa-utensils"></i> Receso del Mediodía (13:00 - 18:00)</td>
+                                </tr>
+
+                                <!-- TURNO TARDE/NOCHE -->
+                                <tr>
+                                    <td class="time-col">18:00 - 19:00</td>
+                                    <td><span class="badge funcional">Funcional</span></td>
+                                    <td><span class="badge movilidad">Movilidad y Stretching</span></td>
+                                    <td><span class="badge funcional">Funcional</span></td>
+                                    <td><span class="badge movilidad">Movilidad y Stretching</span></td>
+                                    <td><span class="badge funcional">Funcional</span></td>
+                                </tr>
+                                <tr>
+                                    <td class="time-col">19:00 - 20:00</td>
+                                    <td><span class="badge fuerza">Fuerza</span></td>
+                                    <td><span class="badge fuerza">Fuerza</span></td>
+                                    <td><span class="badge fuerza">Fuerza</span></td>
+                                    <td><span class="badge fuerza">Fuerza</span></td>
+                                    <td><span class="badge fuerza">Fuerza</span></td>
+                                </tr>
+                                <tr>
+                                    <td class="time-col">20:00 - 21:00</td>
+                                    <td><span class="badge atletico">Atlético</span></td>
+                                    <td><span class="badge funcional">Funcional</span></td>
+                                    <td><span class="badge atletico">Atlético</span></td>
+                                    <td><span class="badge funcional">Funcional</span></td>
+                                    <td><span class="badge hiit">Alta Intensidad</span></td>
+                                </tr>
+                                <tr>
+                                    <td class="time-col">21:00 - 22:00</td>
+                                    <td><span class="badge hiit">Alta Intensidad</span></td>
+                                    <td><span class="badge hiit">Alta Intensidad</span></td>
+                                    <td><span class="badge hiit">Alta Intensidad</span></td>
+                                    <td><span class="badge hiit">Alta Intensidad</span></td>
+                                    <td><span class="badge other">Recreativo</span></td>
+                                </tr>
+                            </tbody>
+                        </table>
                     </div>
                 </section>
             </div>
         </div>
 
-        <!-- BLOQUE 2: BESTIAS -->
-        <div class="collapsible-block">
-            <button class="toggle-btn" type="button">
-                <div class="title-wrapper">
-                    <h2>Nuestras <strong>BESTIAS</strong></h2>
-                    <p class="lit_title">En camino a la cima</p>
-                </div>
-                <i class="fa-solid fa-chevron-down arrow-icon"></i>
-            </button>
-            <div class="collapsible-content">
-                <section class="cards">
-                    <div class="card">
-                        <img src="img/Imagen de WhatsApp 2024-12-10 a las 23.38.13_8963dc67.jpg" alt="profile">
-                        <div class="p1">
-                            <b>Nicolás Sosa</b>
-                            <div class="stats">
-                                <p class="desc"><i class="fa-solid fa-calendar-days"></i> Desde el 1/11/2026</p>
-                                <p class="desc"><i class="fa-solid fa-ranking-star"></i> Destaca en: Delta FUERZA</p>
-                                <p class="desc"><i class="fa-solid fa-layer-group"></i> Nivel: Principiante</p>
-                            </div>
-                        </div>
-                    </div>
-                </section>
-            </div>
-        </div>
-
-        <!-- BLOQUE 3: DISCIPLINAS -->
+        <!-- BLOQUE 2: DISCIPLINAS -->
         <div class="collapsible-block">
             <button class="toggle-btn" type="button">
                 <div class="title-wrapper">
@@ -142,6 +177,78 @@
                 </section>
             </div>
         </div>
+
+        <!-- BLOQUE 3: NIVELES -->
+        <div class="collapsible-block">
+            <button class="toggle-btn" type="button">
+                <div class="title-wrapper">
+                    <h2>Niveles <strong>DELTA</strong></h2>
+                    <p class="lit_title">¿Hasta dónde estás dispuesto a llegar?</p>
+                </div>
+                <i class="fa-solid fa-chevron-down arrow-icon"></i>
+            </button>
+            <div class="collapsible-content">
+                <section class="niveles-section">
+                    <div class="niveles-grid">
+                        <div class="nivel-card">
+                            <i class="fa-solid fa-seedling"></i>
+                            <h3>Principiante</h3>
+                            <p>Menos de 2 meses</p>
+                        </div>
+                        <div class="nivel-card">
+                            <i class="fa-solid fa-dumbbell"></i>
+                            <h3>Amateur</h3>
+                            <p>Entre 2 y 6 meses</p>
+                        </div>
+                        <div class="nivel-card">
+                            <i class="fa-solid fa-fire"></i>
+                            <h3>Intermedio</h3>
+                            <p>Entre 6 y 9 meses</p>
+                        </div>
+                        <div class="nivel-card">
+                            <i class="fa-solid fa-bolt"></i>
+                            <h3>Avanzado</h3>
+                            <p>Entre 9 y 12 meses</p>
+                        </div>
+                        <div class="nivel-card gymrat">
+                            <i class="fa-solid fa-skull"></i>
+                            <h3>GymRat</h3>
+                            <p>Más de 12 meses</p>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </div>
+
+        <!-- BLOQUE 4: BESTIAS -->
+        <div class="collapsible-block">
+            <button class="toggle-btn" type="button">
+                <div class="title-wrapper">
+                    <h2>Nuestras <strong>BESTIAS</strong></h2>
+                    <p class="lit_title">En camino a la cima</p>
+                </div>
+                <i class="fa-solid fa-chevron-down arrow-icon"></i>
+            </button>
+            <div class="collapsible-content">
+                <section class="cards">
+                    <div class="card">
+                        <img src="img/Imagen de WhatsApp 2024-12-10 a las 23.38.13_8963dc67.jpg" alt="profile">
+                        <div class="p1">
+                            <b>Nicolás Sosa</b>
+                            <div class="stats">
+                                <p class="desc"><i class="fa-solid fa-calendar-days"></i> Desde el 1/11/2026</p>
+                                <p class="desc"><i class="fa-solid fa-ranking-star"></i> Destaca en: Delta FUERZA</p>
+                                <p class="desc"><i class="fa-solid fa-layer-group"></i> Nivel: Principiante</p>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </div>
+
+        
+
+        
 
     </main>
 
